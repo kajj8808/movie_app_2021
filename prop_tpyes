@@ -1,0 +1,3 @@
+npm i prop-typese 
+image 를줘야하는데 picture 를 줫을때 잘못된걸 알려주는거
+뭔가 실수햇고 너의 component 는 재대로 동작하지않을꺼야 라는거 그게 prop-typese

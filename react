@@ -1,0 +1,20 @@
+페이지가 로딩될떄 컨테이너의 내용을 그위치에 push 함
+componet는 html을 반환하는 함수.
+그리고 이건 return 을해줘야함 
+                    import ~~~ from "./appname"
+index.js 같은곳에서 ReacteDOM.reder(<App />) component 를 사용하고자할때 의 형태.
+/*<App /> 자리에 app 는안됨 reate 는 html 식으로 해줘야함 이걸보고 jsx 라고함.*/
+/*이곳에 두개 를 .render 을 할수는있지만 밑에것이 적용되서 App 의 내용을 바꾸는게 좋아보임*/
+virtual DOM virtual documnet object model.
+
+jsx 는 단지 html + javascript
+
+component는 대문자로 시작해야하고 component 으로 정보를 보낼수있음!
+props 는 <Karyl event = "~~~"/ date = ""> 의 event date 이런것들 을말함
+그리고 props 는 argument 로 감 function ~~ { envet } <h1> {envet} </h1>
+
+
+map 이 하는것은 render 임
+  return <Karyl key = {card.id} name = {card.name} image = {card.image}/>
+key 안해주면 하라고 에러뜸 
+그리고 img src = "" 하고 시각장애인들을 위한걸로 alt = {name}

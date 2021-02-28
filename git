@@ -6,3 +6,4 @@ git remote add origin 주소
 
 git add . /* 전체를 추가 */
 git commit -m "day.1" /* 아무이름이나 넣을수있고. */
+git push origin master /* 서버에 push */
