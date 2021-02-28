@@ -1,0 +1,8 @@
+git init 
+
+하고 git hub 로
+github 저장소 하나만들고 그거 주소복사해서 
+git remote add origin 주소
+
+git add . /* 전체를 추가 */
+git commit -m "day.1" /* 아무이름이나 넣을수있고. */
