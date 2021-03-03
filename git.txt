@@ -1,0 +1,20 @@
+git init 
+
+하고 git hub 로
+github 저장소 하나만들고 그거 주소복사해서 
+git remote add origin 주소
+
+git add . /* 전체를 추가 */
+git commit -m "day.1" /* 아무이름이나 넣을수있고. */
+git push origin master /* 서버에 push */
+
+
+npm i gh-pages /*github 에 업로드 하는것을 허가해주는 모듈 */
+package.json 에서 "homepage" : "https://{your github username}.github.io/{the name of your project in github} "이단계는 필수
+npm run build
+그리고 scripts 에서
+"deploy" : "gh-pages -d build" /* -d 는 디렉토리의 d 그리고 뒤에꺼는 run으로만든 최적화된 내용들! */
+"predeploy" : "npm run build" /* deploy 를 호출할떄마다 npm 은 predeploy 을 먼저 호출해줄꺼임!*/
+deploy 이름이 같아야 pre 가 동작을함 아니면 동작 x
+
+npm run deploy

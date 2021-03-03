@@ -14,7 +14,7 @@ props 는 <Karyl event = "~~~"/ date = ""> 의 event date 이런것들 을말함
 그리고 props 는 argument 로 감 function ~~ { envet } <h1> {envet} </h1>
 
 
-map 이 하는것은 render 임
+map 이 하는것은 render 임 꼭 return
   return <Karyl key = {card.id} name = {card.name} image = {card.image}/>
 key 안해주면 하라고 에러뜸 
 그리고 img src = "" 하고 시각장애인들을 위한걸로 alt = {name}

@@ -1,0 +1,3 @@
+const string = "~~~~~~~~~~~";
+string.length()
+string.slice(0,10)

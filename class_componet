@@ -1,0 +1,50 @@
+class App extends React.Component
+classs App 는 ReactComponet 라는말. 
+ReactComponet 의 뒤에는 많은것을 가지고있음 그중하나가 state
+ReactComponet 는 return 을 가지고있지않음 function 이 아니기 때문에
+그래서 render method 가 있음 React.Componet 에서 확장햇기때문에.
+
+function Componet는 function 이고 뭔가를 return 을해줌 그리고 screen 에 표시되는데
+class Componet 는 class 지만 React Componet 로 부터 확장되고 screen 에 표시됨
+그걸 render method 에 넣어줘야함 render(){ return <p>hello</p> }
+React 는 자동적으로 모든 class Componet 의 render method 를 실행할려함. 자동으로.
+
+class Componet 를 function Componet 대신에 쓸려는이유 는 state 라고 불리는놈이라서?.
+state 는 object 고 componet 의 data 가 바뀌기 때문에 사용하고 사용할때는
+state = {
+    count : 0/* default */
+};
+render(){
+    return {this.state.count} /* class 기떄문에 */
+}    
+this.setState(current => ({count : current.count + 1})) /* 값 바꾸는방법 */
+/* 매순간 setState 를 호출할때마다 react 는 새로운 state 와 함께 render function 을 실행할꺼임.*/
+ReactComponet 에서 사용하는 유일한 function 는 render function 임.
+하지만 ReactComponet 는 단순히 render 을 빼고 많은걸 가지고있음.
+그리고 이것들은 life cycle method 를 가지는데 life cycle method 는 기본적으로 react 가
+componet 를 생성하는것과 없애는 방법.
+
+-------constructor 는 javascript 에서 class 를 만들떄 호출되는거
+updating 은 내가 업데이트할떄마다 호출됨 reactjs.org/docs/react-componet.html
+setState 를 호출하면 componet 를 호출하고 먼저 render 를 호출한다음에 업데이트가 완료되었다
+고 말하면은 componetDidUpdate 가 실행됨!
+componentDidMount(){
+    console.log("Componet rendered")
+  };
+  componentDidUpdate(){
+    console.log("I Just updated")
+  };
+  render() {
+    console.log("I'm rendering.")
+  }
+실행 - componentDidMount
+setState - componentDidUpdate
+페이지 나갈 때 - Will Umnount
+setTimeout - delay function
+
+axios 는 fetch 위에 있는 작은 layout 
+
+state 를 사용할 필요가없을꺼같을때는 fuction componet 로 돌아가면됨!
+
+class 를 className 으로 햇어야하는이유?
+jsx때문에 에러가나는거고 

@@ -1,0 +1,2 @@
+map 안에있는 item 에는 각각의 key가 필요
+items.map((item , itemNumber))
